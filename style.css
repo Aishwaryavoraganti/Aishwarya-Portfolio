@@ -1,0 +1,213 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('profile.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  backdrop-filter: brightness(0.8);
+}
+
+header {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.nav-tabs button {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  margin: 0 8px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs button:hover {
+  background-color: #ff9a9e;
+  color: #000;
+  transform: scale(1.05);
+}
+
+main {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  display: none;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+}
+.me{
+  text-align: justify;
+  font-family: Apple Chancery, cursive;
+  font-size: 20px;
+}
+
+.tab.active {
+  display: block;
+}
+
+.profile {
+  margin-top: 30px;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#animated-text {
+  font-family: Stencil Std, fantasy;
+  font-size: 1.8rem;
+  color: #22e0cd;
+  min-height: 50px;
+}
+
+
+.name {
+  font-family: Stencil Std, fantasy;
+  font-size: 1.8rem;
+  margin: 20px 0 10px;
+  color: #ffddc1;
+}
+
+a {
+  color: #ffddc1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+#contact {
+  display: none;
+  height: 80vh;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* fully transparent background */
+  backdrop-filter: none; /* remove any blur or dimming */
+}
+
+
+#contact.active {
+  display: flex;
+}
+
+.contact-wrapper {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* optional background */
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 600px;
+}
+
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.contact-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+  cursor: pointer;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
+
+.names{
+  font-family:Stencil Std, fantasy;
+  font-size: 20px;
+  color: aqua;
+  font-weight: bolder;
+}
+
+
+.education-container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: nowrap;
+  padding: 30px;
+}
+
+.education-block {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.edu-img-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.edu-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.edu-details h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  min-height: 48px; /* Ensures heading alignment */
+}
+
+.edu-description {
+  max-width: 900px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: white;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.sign{
+  font-family: Stencil Std, fantasy;
+  font-size: 10px;
+  text-align:right;
+}
